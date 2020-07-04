@@ -1,7 +1,7 @@
 library(ff)
 library(data.table)
 #read DNA methylation data
-bVal.PRAD <- fread("/datasets/work/hb-diab-cfdna/work/Data/level2/cfDNA_project_TCGA450download/DNAmethy_PRAD.csv.gz")
+bVal.PRAD <- fread("./DNAmethy_PRAD.csv.gz")
 bVal.PRAD <- as.data.frame(bVal.PRAD)
 rownames(bVal.PRAD) <- bVal.PRAD$V1
 bVal.PRAD <- bVal.PRAD[,-1]
