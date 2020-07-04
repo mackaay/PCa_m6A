@@ -1,5 +1,5 @@
 load(file = "./eSet.NT.RData")
-sampleinfo <- read.csv("/datasets/work/hb-diab-cfdna/work/Data/level3/TCGA_mRNA/PRAD/sampleinfo_allsample.csv", 
+sampleinfo <- read.csv("./sampleinfo_allsample.csv", 
                        stringsAsFactors = F )
 eSet <- eSet.NT[,53:551]
 eSet <- eSet[,colnames(eSet) %in% sampleinfo$ID]
